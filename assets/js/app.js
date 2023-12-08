@@ -113,21 +113,19 @@ showSlide(currentSlide);
 
 
 
+function openPage(n){
+    switch(n){
+        case 0: var url = 'https://thiwankareiss.github.io/kiwi-final/';break;
+        case 1: var url = 'https://github.com/ThiwankaReiss/kiwi-final.git';break;
+        case 2: var url = 'https://thiwankareiss.github.io/portfolio/';break;
+        case 3: var url = 'https://github.com/ThiwankaReiss/portfolio.git';break;
 
-function openKiwiPage() {
-    // Specify the URL of the webpage you want to open
-    var url = 'https://thiwankareiss.github.io/kiwi-final/';
-
-    // Open the new webpage in a new window or tab
+    }
+   
     window.open(url, '_blank');
-  }
 
-  
 
-function openKiwiCode() {
-    // Specify the URL of the webpage you want to open
-    var url = 'https://github.com/ThiwankaReiss/kiwi-final.git';
-
-    // Open the new webpage in a new window or tab
-    window.open(url, '_blank');
 }
+
+
+
