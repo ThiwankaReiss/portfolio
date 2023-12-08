@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My Portfolio
+    </title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="d">
+        <a class="navbar-brand" href="#">Thiwanka Reiss</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link  " href="#"><span style="color: white;">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hi" href="#"><span style="color: white;">About</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assets/txt/CV.pdf" target="_blank" ><span style="color: white;">CV</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span style="color: white;">Contact</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><span style="color: white;">Blog</span></a>
+            </li>
+          </ul>
+        </div>
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Search...">
+          <ul id="search-suggestions"></ul>
+        </div>
+    </nav> 
+
+    <div class="background">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><p><br></p></div>
+                <div class="description-box-container col-lg-7 col-md-7 col-sm-12">
+                    <div id="description-box" class="scrollbar-1">    
+                        <div class="container">
+                            <div class="row">  
+                                <div class="col-1"></div>
+                                <div class="col-10" id="txt-animation"></div> 
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-container col-lg-5 col-md-5 col-sm-12 ">
+                    <img src="assets/img/Profile-Pic.jpg" alt="Profile Picture" class="profile-picture ">
+                </div>  
+                <div class="col-lg-1 "></div>
+                <div id="carousel-container" class="col-lg-10 col-md-12 col-sm-12">
+                  
+                  <!-- Slide 1 -->
+                  <div class="carousel-slide">
+                    <div class="container" id="carousel-background">
+                      <div class="row">  
+
+                        <div class="col-12" id="my-project-txt">My Projects</div>
+                        <div class="col-1"></div>                   
+                        <div class="col-lg-3 col-md-4 col-sm-4 carousel-itm-box">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-12" style="text-align:center;">
+                                <p>
+                                  <h4>Kiwi Web Page</h4>
+                                </p> 
+                              </div>
+                              <div style="text-align:left;" class="col-12">
+                                This is my first <br> web page design.<br>It's Similar to a wikipedia site.
+                              </div>
+
+                              <div class="col-6">
+                                <button class="carousel-btn" onclick="openKiwiPage()">Demo</button>
+                              </div>
+                              <div class="col-6">
+                                <button class="carousel-btn" onclick="openKiwiCode()">Code</button>
+                              </div>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 hidden-xs carousel-itm-box">Container 2</div>
+                        <div class="col-lg-3 hidden-xs hidden-md hidden-xs carousel-itm-box">Container 3</div>
+                        <div class="col-1"></div>  
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div class="carousel-slide">
+                    <div class="container" id="carousel-background">
+                      <div class="row">
+                        <div class="col-12" id="my-project-txt">My Projects</div>
+  
+                        <div class="col-1"></div> 
+                        <div class="col-lg-3 col-md-4 col-sm-4  carousel-itm-box">Container 2</div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 hidden-xs carousel-itm-box">Container 3</div>
+                        <div class="col-lg-3  col-md-4 hidden-md hidden-xs carousel-itm-box">Container 4</div>
+                        <div class="col-1"></div> 
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div class="carousel-slide">
+                    <div class="container" id="carousel-background">
+                      <div class="row">
+                        <div class="col-12" id="my-project-txt">My Projects</div>
+  
+                        <div class="col-1"></div> 
+                        <div class="col-lg-3 col-md-4 col-sm-4 carousel-itm-box">Container 3</div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 hidden-xs carousel-itm-box">Container 4</div>
+                        <div class="col-lg-3 col-md-4 hidden-md hidden-xs carousel-itm-box">Container 5</div>
+                        <div class="col-1"></div> 
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-slide">
+                    <div class="container" id="carousel-background">
+                      <div class="row">
+                        <div class="col-12" id="my-project-txt">My Projects</div>
+  
+                        <div class="col-1"></div> 
+                        <div class="col-lg-3 col-md-4 col-sm-4 carousel-itm-box">Container 4</div>
+                        <div class="col-lg-3 col-md-4 hidden-xs col-sm-4 carousel-itm-box">Container 5</div>
+                        <div class="col-lg-3 hidden-md hidden-xs carousel-itm-box">Container 6</div>
+                        <div class="col-1"></div> 
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Navigation buttons -->
+                  <button class="carousel-btn" id="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                  <button class="carousel-btn" id="next-btn" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                  <div class="container scrollbar-1" id="description-box">
+                    <div class="row">
+                        <div class="col-12" id="qulifications-text">Qualifications</div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
+                         <p id="qulifications-para">
+                          <br><br>
+                          1	&#41;Ordinary Level Examination (9 A’s) <br><br>
+
+                          2	&#41;Advanced Level Examination (3 A’s) <br>
+                          &nbsp;&nbsp;&nbsp;(Mathematics, Physics ,Chemistry)<br><br>
+
+                          3	&#41;University of Moratuwa (Sri Lanka)<br> 
+                          &nbsp;&nbsp;&nbsp;Undergarduate  
+                         </p> 
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6" >
+                  <div class="container scrollbar-1" id="description-box">
+                    <div class="row">
+                      <div class="col-12" id="qulifications-text">Fields Of Interest</div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
+                         <p id="qulifications-para">
+                          <br><br>
+                          1&#41;Java Dased Web Development<br><br>
+
+                          2&#41;Java Standalone Application<br>
+                          &nbsp;&nbsp;&nbsp;Development<br><br>
+
+                          3&#41;Apps Based On High<br> 
+                          &nbsp;&nbsp;&nbsp;Mathematical Calculations
+                         </p> 
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="container">
+                    <div class="row contact-box scrollbar-1">
+                        <div class="col-lg-4 col-md-4">
+                          <div class="container">
+                            <div class="row img-align">
+                              <div class="col-12 img-align">
+                                <img src="assets/img/Recomendations.png" class="img">
+                              </div>
+                              
+                              <div id="recomendation-para">
+                                <p>
+                                  Rasika KumaraGama<br>
+                                  (Teacher St.Sebastian’s College) <br><br>
+                                   071 856 7791
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="container">
+                            <div class="row img-align">
+                              <img src="assets/img/Recomendations.png" class="img">
+                              <div id="recomendation-para">
+                                <p>
+                                  Mr.Suresh Edirisinghe<br>
+                                  Director of Operations
+                                  And Specified Oficer
+                                  AIA insuarance.<br>
+                                  077 728 7744
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="container">
+                            <div class="row img-align">
+                              <img src="assets/img/Recomendations.png" class="img">
+                              <div id="recomendation-para">
+                                <p>
+                                  Mr.Lasitha Wimalarathne<br>
+                                  Charted Insurer
+                                  Dheif Executive Oficer
+                                  HNB Assuarance PLC, Colombo 3.<br>
+                                  077 369 4968
+
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+</body> 
+</html>
+
